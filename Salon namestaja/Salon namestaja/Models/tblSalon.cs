@@ -15,6 +15,7 @@ namespace Salon_namestaja.Models
     public partial class tblSalon
     {
         public int Id { get; set; }
+     
         public string Nazic { get; set; }
         public string Adresa { get; set; }
         public string Telefon { get; set; }

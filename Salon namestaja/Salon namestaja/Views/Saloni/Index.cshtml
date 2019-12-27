@@ -1,0 +1,85 @@
+﻿@model IEnumerable<Salon_namestaja.Models.tblSalon>
+
+@{
+    ViewBag.Title = "Index";
+}
+<style type="text/css">
+    h2
+    {
+       text-align:center
+    }
+</style>
+<h2>Saloni</h2>
+<!----
+<a href="@Url.Action("Creat","Saloni")"
+   class="btn btn-primary btn-sm">
+    <span
+        class="glyphicon glyphicon-plus"
+          aria-hidden="false">
+        </span>
+    Create New
+
+</a> 
+    -->
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nazic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WebStranica)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pib)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BrojZiroRacuna)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nazic)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WebStranica)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pib)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BrojZiroRacuna)
+        </td>
+        <td>
+           <button name="Edit" type="submit" ></button>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
