@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SalonDBModelStoreContainer" CdmEntityContainer="SalonDBEntities">
+    <EntitySetMapping Name="tblSalons">
+      <EntityTypeMapping TypeName="SalonDBModel.tblSalon">
+        <MappingFragment StoreEntitySet="tblSalon">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nazic" ColumnName="Nazic" />
+          <ScalarProperty Name="Adresa" ColumnName="Adresa" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="WebStranica" ColumnName="WebStranica" />
+          <ScalarProperty Name="Pib" ColumnName="Pib" />
+          <ScalarProperty Name="BrojZiroRacuna" ColumnName="BrojZiroRacuna" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,55 @@
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Salon namestaja.dll.config
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Salon namestaja.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Salon namestaja.pdb
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Antlr3.Runtime.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\EntityFramework.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\EntityFramework.SqlServer.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Security.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Newtonsoft.Json.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Owin.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\System.Web.Helpers.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\System.Web.Mvc.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\System.Web.Optimization.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\System.Web.Razor.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\System.Web.WebPages.Deployment.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\System.Web.WebPages.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\System.Web.WebPages.Razor.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\WebGrease.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\System.Web.Helpers.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\System.Web.Mvc.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\System.Web.Optimization.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\System.Web.Razor.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\System.Web.WebPages.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\System.Web.WebPages.Deployment.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\System.Web.WebPages.Razor.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Antlr3.Runtime.pdb
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Newtonsoft.Json.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\EntityFramework.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\EntityFramework.SqlServer.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Security.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\obj\Debug\Salon namestaja.csprojResolveAssemblyReference.cache
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\obj\Debug\Salon namestaja.dll
+C:\Users\SmartinIT\Desktop\Zavrni projekat\ProjekatASPNETMVC2-19\Salon namestaja\Salon namestaja\obj\Debug\Salon namestaja.pdb
