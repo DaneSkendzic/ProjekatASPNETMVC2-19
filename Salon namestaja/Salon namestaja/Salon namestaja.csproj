@@ -163,6 +163,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NamestajController.cs" />
     <Compile Include="Controllers\SaloniController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -186,7 +187,28 @@
       <DependentUpon>Salon.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\StringLenght.cs" />
+    <Compile Include="Models\tblKorisnici.cs">
+      <DependentUpon>Salon.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\tblSalon.cs">
+      <DependentUpon>Salon.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblUloge.cs">
+      <DependentUpon>Salon.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_KomadniNamestaj.cs">
+      <DependentUpon>Salon.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_Namestaj.cs">
+      <DependentUpon>Salon.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_Racun.cs">
+      <DependentUpon>Salon.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_Stavke.cs">
+      <DependentUpon>Salon.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tbl_StavkeNaRacunu.cs">
       <DependentUpon>Salon.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -270,6 +292,11 @@
     <Content Include="Views\Saloni\Details.cshtml" />
     <Content Include="Views\Saloni\Edit.cshtml" />
     <Content Include="Views\Saloni\Index.cshtml" />
+    <Content Include="Views\Namestaj\Create.cshtml" />
+    <Content Include="Views\Namestaj\Delete.cshtml" />
+    <Content Include="Views\Namestaj\Details.cshtml" />
+    <Content Include="Views\Namestaj\Edit.cshtml" />
+    <Content Include="Views\Namestaj\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

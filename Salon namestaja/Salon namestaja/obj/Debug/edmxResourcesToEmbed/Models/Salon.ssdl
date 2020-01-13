@@ -1,11 +1,75 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="SalonDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_KomadniNamestaj">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Sifra" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Naziv" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ZemljaProizvodnje" Type="nvarchar" MaxLength="50" />
+    <Property Name="GodinaProizvodnja" Type="datetime" />
+    <Property Name="JedinicnaCena" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="StanjeKolicina" Type="int" Nullable="false" />
+    <Property Name="SalonId" Type="int" Nullable="false" />
+    <Property Name="KategorijaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Slika" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Namestaj">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Naziv" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Opis" Type="nvarchar" MaxLength="1500" />
+  </EntityType>
+  <EntityType Name="tbl_Racun">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Porez" Type="int" Nullable="false" />
+    <Property Name="CenaSaPorezom" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="DatumKupovine" Type="datetime" Nullable="false" />
+    <Property Name="Kupac" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_Stavke">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KomadNamestaja" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KomCena" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Kolicina" Type="int" Nullable="false" />
+    <Property Name="NazivSalona" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_StavkeNaRacunu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RacunId" Type="int" Nullable="false" />
+    <Property Name="StavkeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblKorisnici">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="KorisnickoIme" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Lozinka" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ime" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Prezime" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Adresa" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Uloga" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
   <EntityType Name="tblSalon">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Nazic" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Naziv" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Adresa" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Telefon" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -13,7 +77,102 @@
     <Property Name="Pib" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="BrojZiroRacuna" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
+  <EntityType Name="tblUloge">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Naziv" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Opis" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tbl_KomadniNamestaj_tbl_Namestaj1">
+    <End Role="tbl_Namestaj" Type="Self.tbl_Namestaj" Multiplicity="1" />
+    <End Role="tbl_KomadniNamestaj" Type="Self.tbl_KomadniNamestaj" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Namestaj">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_KomadniNamestaj">
+        <PropertyRef Name="KategorijaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_KomadniNamestaj_tblSalon">
+    <End Role="tblSalon" Type="Self.tblSalon" Multiplicity="1" />
+    <End Role="tbl_KomadniNamestaj" Type="Self.tbl_KomadniNamestaj" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSalon">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_KomadniNamestaj">
+        <PropertyRef Name="SalonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_StavkeNaRacunu_tbl_Racun">
+    <End Role="tbl_Racun" Type="Self.tbl_Racun" Multiplicity="1" />
+    <End Role="tbl_StavkeNaRacunu" Type="Self.tbl_StavkeNaRacunu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Racun">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_StavkeNaRacunu">
+        <PropertyRef Name="RacunId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_StavkeNaRacunu_tbl_Stavke">
+    <End Role="tbl_Stavke" Type="Self.tbl_Stavke" Multiplicity="1" />
+    <End Role="tbl_StavkeNaRacunu" Type="Self.tbl_StavkeNaRacunu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Stavke">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_StavkeNaRacunu">
+        <PropertyRef Name="StavkeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblKorisnici_tblUloge">
+    <End Role="tblUloge" Type="Self.tblUloge" Multiplicity="1" />
+    <End Role="tblKorisnici" Type="Self.tblKorisnici" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUloge">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblKorisnici">
+        <PropertyRef Name="Uloga" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="SalonDBModelStoreContainer">
+    <EntitySet Name="tbl_KomadniNamestaj" EntityType="Self.tbl_KomadniNamestaj" Schema="dbo" Table="tbl.KomadniNamestaj" store:Type="Tables" />
+    <EntitySet Name="tbl_Namestaj" EntityType="Self.tbl_Namestaj" Schema="dbo" Table="tbl.Namestaj" store:Type="Tables" />
+    <EntitySet Name="tbl_Racun" EntityType="Self.tbl_Racun" Schema="dbo" Table="tbl.Racun" store:Type="Tables" />
+    <EntitySet Name="tbl_Stavke" EntityType="Self.tbl_Stavke" Schema="dbo" Table="tbl.Stavke" store:Type="Tables" />
+    <EntitySet Name="tbl_StavkeNaRacunu" EntityType="Self.tbl_StavkeNaRacunu" Schema="dbo" Table="tbl.StavkeNaRacunu" store:Type="Tables" />
+    <EntitySet Name="tblKorisnici" EntityType="Self.tblKorisnici" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tblSalon" EntityType="Self.tblSalon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUloge" EntityType="Self.tblUloge" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tbl_KomadniNamestaj_tbl_Namestaj1" Association="Self.FK_tbl_KomadniNamestaj_tbl_Namestaj1">
+      <End Role="tbl_Namestaj" EntitySet="tbl_Namestaj" />
+      <End Role="tbl_KomadniNamestaj" EntitySet="tbl_KomadniNamestaj" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_KomadniNamestaj_tblSalon" Association="Self.FK_tbl_KomadniNamestaj_tblSalon">
+      <End Role="tblSalon" EntitySet="tblSalon" />
+      <End Role="tbl_KomadniNamestaj" EntitySet="tbl_KomadniNamestaj" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_StavkeNaRacunu_tbl_Racun" Association="Self.FK_tbl_StavkeNaRacunu_tbl_Racun">
+      <End Role="tbl_Racun" EntitySet="tbl_Racun" />
+      <End Role="tbl_StavkeNaRacunu" EntitySet="tbl_StavkeNaRacunu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_StavkeNaRacunu_tbl_Stavke" Association="Self.FK_tbl_StavkeNaRacunu_tbl_Stavke">
+      <End Role="tbl_Stavke" EntitySet="tbl_Stavke" />
+      <End Role="tbl_StavkeNaRacunu" EntitySet="tbl_StavkeNaRacunu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblKorisnici_tblUloge" Association="Self.FK_tblKorisnici_tblUloge">
+      <End Role="tblUloge" EntitySet="tblUloge" />
+      <End Role="tblKorisnici" EntitySet="tblKorisnici" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

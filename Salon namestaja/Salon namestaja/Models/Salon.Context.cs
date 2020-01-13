@@ -25,6 +25,13 @@ namespace Salon_namestaja.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<tbl_KomadniNamestaj> tbl_KomadniNamestaj { get; set; }
+        public virtual DbSet<tbl_Namestaj> tbl_Namestaj { get; set; }
+        public virtual DbSet<tbl_Racun> tbl_Racun { get; set; }
+        public virtual DbSet<tbl_Stavke> tbl_Stavke { get; set; }
+        public virtual DbSet<tbl_StavkeNaRacunu> tbl_StavkeNaRacunu { get; set; }
+        public virtual DbSet<tblKorisnici> tblKorisnicis { get; set; }
         public virtual DbSet<tblSalon> tblSalons { get; set; }
+        public virtual DbSet<tblUloge> tblUloges { get; set; }
     }
 }

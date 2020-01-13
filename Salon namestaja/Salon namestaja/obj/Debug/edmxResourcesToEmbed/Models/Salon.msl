@@ -1,17 +1,96 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="SalonDBModelStoreContainer" CdmEntityContainer="SalonDBEntities">
+    <EntitySetMapping Name="tbl_KomadniNamestaj">
+      <EntityTypeMapping TypeName="SalonDBModel.tbl_KomadniNamestaj">
+        <MappingFragment StoreEntitySet="tbl_KomadniNamestaj">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Sifra" ColumnName="Sifra" />
+          <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+          <ScalarProperty Name="ZemljaProizvodnje" ColumnName="ZemljaProizvodnje" />
+          <ScalarProperty Name="GodinaProizvodnja" ColumnName="GodinaProizvodnja" />
+          <ScalarProperty Name="JedinicnaCena" ColumnName="JedinicnaCena" />
+          <ScalarProperty Name="StanjeKolicina" ColumnName="StanjeKolicina" />
+          <ScalarProperty Name="SalonId" ColumnName="SalonId" />
+          <ScalarProperty Name="KategorijaId" ColumnName="KategorijaId" />
+          <ScalarProperty Name="Slika" ColumnName="Slika" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Namestaj">
+      <EntityTypeMapping TypeName="SalonDBModel.tbl_Namestaj">
+        <MappingFragment StoreEntitySet="tbl_Namestaj">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+          <ScalarProperty Name="Opis" ColumnName="Opis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Racun">
+      <EntityTypeMapping TypeName="SalonDBModel.tbl_Racun">
+        <MappingFragment StoreEntitySet="tbl_Racun">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Porez" ColumnName="Porez" />
+          <ScalarProperty Name="CenaSaPorezom" ColumnName="CenaSaPorezom" />
+          <ScalarProperty Name="DatumKupovine" ColumnName="DatumKupovine" />
+          <ScalarProperty Name="Kupac" ColumnName="Kupac" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Stavke">
+      <EntityTypeMapping TypeName="SalonDBModel.tbl_Stavke">
+        <MappingFragment StoreEntitySet="tbl_Stavke">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KomadNamestaja" ColumnName="KomadNamestaja" />
+          <ScalarProperty Name="KomCena" ColumnName="KomCena" />
+          <ScalarProperty Name="Kolicina" ColumnName="Kolicina" />
+          <ScalarProperty Name="NazivSalona" ColumnName="NazivSalona" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_StavkeNaRacunu">
+      <EntityTypeMapping TypeName="SalonDBModel.tbl_StavkeNaRacunu">
+        <MappingFragment StoreEntitySet="tbl_StavkeNaRacunu">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RacunId" ColumnName="RacunId" />
+          <ScalarProperty Name="StavkeId" ColumnName="StavkeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblKorisnicis">
+      <EntityTypeMapping TypeName="SalonDBModel.tblKorisnici">
+        <MappingFragment StoreEntitySet="tblKorisnici">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KorisnickoIme" ColumnName="KorisnickoIme" />
+          <ScalarProperty Name="Lozinka" ColumnName="Lozinka" />
+          <ScalarProperty Name="Ime" ColumnName="Ime" />
+          <ScalarProperty Name="Prezime" ColumnName="Prezime" />
+          <ScalarProperty Name="Adresa" ColumnName="Adresa" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Uloga" ColumnName="Uloga" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="tblSalons">
       <EntityTypeMapping TypeName="SalonDBModel.tblSalon">
         <MappingFragment StoreEntitySet="tblSalon">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Nazic" ColumnName="Nazic" />
+          <ScalarProperty Name="Naziv" ColumnName="Naziv" />
           <ScalarProperty Name="Adresa" ColumnName="Adresa" />
           <ScalarProperty Name="Telefon" ColumnName="Telefon" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="WebStranica" ColumnName="WebStranica" />
           <ScalarProperty Name="Pib" ColumnName="Pib" />
           <ScalarProperty Name="BrojZiroRacuna" ColumnName="BrojZiroRacuna" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUloges">
+      <EntityTypeMapping TypeName="SalonDBModel.tblUloge">
+        <MappingFragment StoreEntitySet="tblUloge">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+          <ScalarProperty Name="Opis" ColumnName="Opis" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

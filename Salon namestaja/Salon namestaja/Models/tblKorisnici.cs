@@ -12,22 +12,17 @@ namespace Salon_namestaja.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class tblSalon
+    public partial class tblKorisnici
     {
-        public tblSalon()
-        {
-            this.tbl_KomadniNamestaj = new HashSet<tbl_KomadniNamestaj>();
-        }
-    
         public int Id { get; set; }
-        public string Naziv { get; set; }
+        public string KorisnickoIme { get; set; }
+        public string Lozinka { get; set; }
+        public string Ime { get; set; }
+        public string Prezime { get; set; }
         public string Adresa { get; set; }
-        public string Telefon { get; set; }
         public string Email { get; set; }
-        public string WebStranica { get; set; }
-        public string Pib { get; set; }
-        public string BrojZiroRacuna { get; set; }
+        public int Uloga { get; set; }
     
-        public virtual ICollection<tbl_KomadniNamestaj> tbl_KomadniNamestaj { get; set; }
+        public virtual tblUloge tblUloge { get; set; }
     }
 }
